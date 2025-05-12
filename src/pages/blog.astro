@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+
 import '../styles/global.css';
 
 const pageTitle = "My Astro Learning Blog";
@@ -15,11 +17,7 @@ const pageTitle = "My Astro Learning Blog";
   <body>
     <!--Adding this here until I learn how to add
 	header islands in Astro -->
-  <nav>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-	</nav>
+  <Navigation />
 
     <h1>{pageTitle}</h1>
     <p>Check out the first test post</p>

@@ -1,7 +1,8 @@
 ---
-import Navigation from '../components/Navigation.astro';
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 
-import '../styles/global.css';
+import "../styles/global.css";
 
 const pageTitle = "ChristianHub";
 ---
@@ -11,15 +12,16 @@ const pageTitle = "ChristianHub";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
+    <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
   <body>
-	<!--Adding this here until I learn how to add
+    <!--Adding this here until I learn how to add
 	header islands in Astro -->
-	<Navigation />
-	
+    <Navigation />
+
     <h1>{pageTitle}</h1>
-	<p>Adding fake content to see how it displays</p>
+    <p>Adding fake content to see how it displays</p>
+    <Footer />
   </body>
 </html>
